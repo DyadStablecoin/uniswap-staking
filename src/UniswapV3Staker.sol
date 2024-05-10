@@ -6,14 +6,14 @@
 pragma solidity =0.7.6;
 pragma abicoder v2;
 
-////import '@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol';
+import '@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol';
 
-////import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';
-////import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
-////import '@uniswap/v3-core/contracts/interfaces/IERC20Minimal.sol';
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@uniswap/v3-core/contracts/interfaces/IERC20Minimal.sol';
 
-////import '@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol';
-////import '@uniswap/v3-periphery/contracts/interfaces/IMulticall.sol';
+import '@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@uniswap/v3-periphery/contracts/interfaces/IMulticall.sol';
 
 /// @title Uniswap V3 Staker Interface
 /// @notice Allows staking nonfungible liquidity tokens in exchange for reward tokens
@@ -194,10 +194,10 @@ interface IUniswapV3Staker is IERC721Receiver, IMulticall {
 */
             
 ////// SPDX-License-Identifier-FLATTEN-SUPPRESS-WARNING: GPL-2.0-or-later
-pragma solidity >=0.6.0;
+// pragma solidity >=0.6.0;
 
-////import '@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol';
-////import '@openzeppelin/contracts/utils/Address.sol';
+import '@uniswap/v3-periphery/contracts/libraries/TransferHelper.sol';
+import '@openzeppelin/contracts/utils/Address.sol';
 
 library TransferHelperExtended {
     using Address for address;
@@ -241,13 +241,13 @@ library TransferHelperExtended {
 */
             
 ////// SPDX-License-Identifier-FLATTEN-SUPPRESS-WARNING: GPL-2.0-or-later
-pragma solidity =0.7.6;
+// pragma solidity =0.7.6;
 
-////import '@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol';
-////import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';
-////import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
 
-////import '@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol';
+import '@uniswap/v3-periphery/contracts/libraries/PoolAddress.sol';
 
 /// @notice Encapsulates the logic for getting info about a NFT token ID
 library NFTPositionInfo {
@@ -296,10 +296,10 @@ library NFTPositionInfo {
 */
             
 ////// SPDX-License-Identifier-FLATTEN-SUPPRESS-WARNING: GPL-2.0-or-later
-pragma solidity =0.7.6;
+// pragma solidity =0.7.6;
 
-////import '@uniswap/v3-core/contracts/libraries/FullMath.sol';
-////import '@openzeppelin/contracts/math/Math.sol';
+import '@uniswap/v3-core/contracts/libraries/FullMath.sol';
+import '@openzeppelin/contracts/math/Math.sol';
 
 /// @title Math for computing rewards
 /// @notice Allows computing rewards given some parameters of stakes and incentives
@@ -346,8 +346,8 @@ library RewardMath {
 */
             
 ////// SPDX-License-Identifier-FLATTEN-SUPPRESS-WARNING: GPL-2.0-or-later
-pragma solidity =0.7.6;
-pragma abicoder v2;
+// pragma solidity =0.7.6;
+// pragma abicoder v2;
 
 ////import '../interfaces/IUniswapV3Staker.sol';
 
@@ -366,8 +366,8 @@ library IncentiveId {
 */
 
 ////// SPDX-License-Identifier-FLATTEN-SUPPRESS-WARNING: GPL-2.0-or-later
-pragma solidity =0.7.6;
-pragma abicoder v2;
+// pragma solidity =0.7.6;
+// pragma abicoder v2;
 
 ////import './interfaces/IUniswapV3Staker.sol';
 ////import './libraries/IncentiveId.sol';
@@ -375,12 +375,12 @@ pragma abicoder v2;
 ////import './libraries/NFTPositionInfo.sol';
 ////import './libraries/TransferHelperExtended.sol';
 
-////import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';
-////import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
-////import '@uniswap/v3-core/contracts/interfaces/IERC20Minimal.sol';
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Factory.sol';
+import '@uniswap/v3-core/contracts/interfaces/IUniswapV3Pool.sol';
+import '@uniswap/v3-core/contracts/interfaces/IERC20Minimal.sol';
 
-////import '@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol';
-////import '@uniswap/v3-periphery/contracts/base/Multicall.sol';
+import '@uniswap/v3-periphery/contracts/interfaces/INonfungiblePositionManager.sol';
+import '@uniswap/v3-periphery/contracts/base/Multicall.sol';
 
 /// @title Uniswap V3 canonical staking interface
 contract UniswapV3Staker is IUniswapV3Staker, Multicall {
