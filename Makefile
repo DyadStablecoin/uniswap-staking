@@ -7,6 +7,6 @@ deploy:
 		--broadcast \
 		--verify \
 		-i 1 \
-		-vvvv \
-		--via-ir \
-		--optimize
+		-vvvv # \
+		# --via-ir \
+		# --optimize
